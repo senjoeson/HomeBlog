@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rick.blogcore.persistence.mapper.SysTemplateMapper" >
+  <resultMap id="BaseResultMap" type="com.rick.blogcore.persistence.beans.SysTemplate" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="ref_key" property="refKey" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.rick.blogcore.persistence.beans.SysTemplate" extends="BaseResultMap" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="ref_value" property="refValue" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, ref_key, create_time, update_time
+  </sql>
+  <sql id="Blob_Column_List" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    ref_value
+  </sql>
+</mapper>

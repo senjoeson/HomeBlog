@@ -120,3 +120,4 @@ src/
 .idea/libraries/Maven__org_springframework_spring_tx_4_3_9_RELEASE.xml
 .idea/libraries/Maven__redis_clients_jedis_2_9_0.xml
 blog-core/.mvn/
+!/blog-core/src/

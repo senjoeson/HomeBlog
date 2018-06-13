@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.rick.blogcore.persistence.mapper.SysConfigMapper" >
+  <resultMap id="BaseResultMap" type="com.rick.blogcore.persistence.beans.SysConfig" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="home_desc" property="homeDesc" jdbcType="VARCHAR" />
+    <result column="home_keywords" property="homeKeywords" jdbcType="VARCHAR" />
+    <result column="domain" property="domain" jdbcType="VARCHAR" />
+    <result column="site_url" property="siteUrl" jdbcType="VARCHAR" />
+    <result column="site_name" property="siteName" jdbcType="VARCHAR" />
+    <result column="site_desc" property="siteDesc" jdbcType="VARCHAR" />
+    <result column="site_favicon" property="siteFavicon" jdbcType="VARCHAR" />
+    <result column="static_web_site" property="staticWebSite" jdbcType="VARCHAR" />
+    <result column="author_name" property="authorName" jdbcType="VARCHAR" />
+    <result column="author_email" property="authorEmail" jdbcType="VARCHAR" />
+    <result column="wx_code" property="wxCode" jdbcType="VARCHAR" />
+    <result column="qq" property="qq" jdbcType="VARCHAR" />
+    <result column="weibo" property="weibo" jdbcType="VARCHAR" />
+    <result column="github" property="github" jdbcType="VARCHAR" />
+    <result column="maintenance" property="maintenance" jdbcType="BIT" />
+    <result column="maintenance_data" property="maintenanceData" jdbcType="TIMESTAMP" />
+    <result column="comment" property="comment" jdbcType="BIT" />
+    <result column="qiuniu_base_path" property="qiuniuBasePath" jdbcType="VARCHAR" />
+    <result column="qiniu_access_key" property="qiniuAccessKey" jdbcType="VARCHAR" />
+    <result column="qiniu_secret_key" property="qiniuSecretKey" jdbcType="VARCHAR" />
+    <result column="qiniu_bucket_name" property="qiniuBucketName" jdbcType="VARCHAR" />
+    <result column="baidu_push_token" property="baiduPushToken" jdbcType="VARCHAR" />
+    <result column="wx_praise_code" property="wxPraiseCode" jdbcType="VARCHAR" />
+    <result column="zfb_praise_code" property="zfbPraiseCode" jdbcType="VARCHAR" />
+    <result column="baidu_api_ak" property="baiduApiAk" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, home_desc, home_keywords, domain, site_url, site_name, site_desc, site_favicon, 
+    static_web_site, author_name, author_email, wx_code, qq, weibo, github, maintenance, 
+    maintenance_data, comment, qiuniu_base_path, qiniu_access_key, qiniu_secret_key, 
+    qiniu_bucket_name, baidu_push_token, wx_praise_code, zfb_praise_code, baidu_api_ak, 
+    create_time, update_time
+  </sql>
+</mapper>

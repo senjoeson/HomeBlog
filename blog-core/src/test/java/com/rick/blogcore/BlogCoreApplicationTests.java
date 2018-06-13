@@ -1,5 +1,7 @@
 package com.rick.blogcore;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.rick.blogcore.persistence.beans.BizArticleLook;
 import com.rick.blogcore.persistence.mapper.BizArticleLookMapper;
 import org.junit.Test;
@@ -24,6 +26,21 @@ public class BlogCoreApplicationTests {
 	public void contextLoads() {
 	List<BizArticleLook> BizArticleLooks=mapper.selectAll();
 	System.out.println(BizArticleLooks);
+	}
+
+	/**
+	  *
+	  * @author 蒋涛 Rick Jiang
+	  * @date 2018/6/13 11:24
+	  * @description 分页测试
+	  *
+	  */
+	@Test
+	public void pageLoad() {
+		PageHelper.startPage(1,3);
+		List<BizArticleLook> BizArticleLooks=mapper.selectAll();
+		PageInfo bean=new PageInfo<BizArticleLook>(BizArticleLooks);
+		System.out.println(bean.getList());
 	}
 
 }
